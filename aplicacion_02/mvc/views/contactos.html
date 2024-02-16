@@ -1,0 +1,30 @@
+$def with (contactos)
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+</head>
+<body>
+    <h1>Contactos</h1>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Correo Electrónico</th>
+            <th>Edad</th>
+        </tr>
+
+        $for contacto in contactos:
+            <tr>
+                <td>$contacto['nombre']</td>
+                <td>$contacto['email']</td>
+                <td>$contacto['edad']</td>
+            </tr>
+    </table>
+</body>
+</html>
